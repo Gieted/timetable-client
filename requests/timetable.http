@@ -1,0 +1,14 @@
+### Lista kierunków
+GET http://plan.ii.us.edu.pl/left_menu.php
+
+### Lista lat
+GET http://plan.ii.us.edu.pl/left_menu_feed.php?type=1&branch=6999
+
+### Lista grup
+GET http://plan.ii.us.edu.pl/left_menu_feed.php?type=1&branch=27162
+
+### Lista podgrup
+GET http://plan.ii.us.edu.pl/left_menu_feed.php?type=1&branch=27178
+
+### Plan
+GET http://plan.ii.us.edu.pl/plan.php?cvsfile=true&id=27180&w=8

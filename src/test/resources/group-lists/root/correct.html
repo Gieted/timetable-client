@@ -1,0 +1,65 @@
+<!--suppress ALL -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+    <title></title>
+    <link href="css/left_tree.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" language="JavaScript" src="js/jquery.js"></script>
+    <script type="text/javascript" language="JavaScript" src="js/jquery.treeview.pack.js"></script>
+    <script type="text/javascript" language="JavaScript" src="js/left_menu.js"></script>
+    <script type="text/javascript" language="JavaScript" src="js/courses_tree_fns.js"></script>
+</head>
+
+
+<body>
+<table width="100%">
+    <tr>
+        <td align="center"></td>
+    </tr>
+</table>
+<map name="timetable_types">
+    <area shape="RECT" alt="Grupy"
+          coords="1, 1, 50, 23"
+          href="left_menu.php?type=1"/>
+    <area shape="RECT" alt="Nauczyciele"
+          coords="51, 1, 100, 23"
+          href="left_menu.php?type=2"/>
+    <area shape="RECT" alt="Sale|Zasoby"
+          coords="101, 1, 150, 23"
+          href="left_menu.php?type=3"/>
+</map>
+<table class="branch3" cellspacing="0" cellpadding="0">
+    <tr>
+        <td><img style="border-style: none" usemap="#timetable_types"
+                 src="images/students.gif"/></td>
+    </tr>
+</table>
+
+<div style="margin-left: 0">
+    <table class="branch2" cellspacing="0" cellpadding="0">
+        <tr>
+            <td><img src="images/1x1.gif" width="143" height="1"/></td>
+        </tr>
+        <tr>
+            <td>
+                <ul class="main_tree">
+                    <li id="28638"><a href="#" onclick="branch(1,28638,0,'Biofizyka I stopnia');"><img
+                            class="img_collapsed" src="images/plus1.gif" border="0"></a><span
+                            style="margin-left: -13px">Biofizyka I stopnia</span></il>
+                    <li id="28639"><a href="#" onclick="branch(1,28639,0,'Biofizyka II stopnia');"><img
+                            class="img_collapsed" src="images/plus1.gif" border="0"></a><span
+                            style="margin-left: -13px">Biofizyka II stopnia</span></il>
+                    <li id="40376"><a href="#" onclick="branch(1,40376,1);"><img class="img_collapsed"
+                                                                                 src="images/plus1.gif"
+                                                                                 border="0"></a><span
+                            style="margin-left: -13px"><a href="plan.php?type=2&amp;id=40376" target="page_content">Chemia I stopnia</a></span></il>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
