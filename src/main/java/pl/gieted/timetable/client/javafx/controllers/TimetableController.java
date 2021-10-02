@@ -70,7 +70,8 @@ public class TimetableController implements Initializable {
         }));
 
         try {
-            Timetable timetable = timetableService.getTimetable(group, new Range(17, 17));
+            int currentWeek = timetableService.getCurrentWeek(group);
+            Timetable timetable = timetableService.getTimetable(group, new Range(currentWeek, currentWeek));
             Timetable.Week week = timetable.getWeeks().get(0);
             week.getEvents().forEach(event -> {
                 Calendar calendar = Calendar.getInstance();

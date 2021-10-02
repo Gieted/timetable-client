@@ -29,4 +29,8 @@ public class TimetableService {
 
         return scrapingRepository.getTimetable(group, weeksRange);
     }
+
+    public int getCurrentWeek(@NotNull Group group) throws TimetableUpdateException {
+        return scrapingRepository.getCurrentWeek(group);
+    }
 }

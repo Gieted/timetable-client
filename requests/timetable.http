@@ -10,5 +10,8 @@ GET http://plan.ii.us.edu.pl/left_menu_feed.php?type=1&branch=27162
 ### Lista podgrup
 GET http://plan.ii.us.edu.pl/left_menu_feed.php?type=1&branch=27178
 
-### Plan
+### Plan (CSV)
 GET http://plan.ii.us.edu.pl/plan.php?cvsfile=true&id=27180&w=8
+
+### Plan (HTML)
+GET http://plan.ii.us.edu.pl/plan.php?type=0&id=55990&winW=1904&winH=510

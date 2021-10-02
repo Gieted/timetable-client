@@ -9,6 +9,7 @@ import org.jetbrains.annotations.NotNull;
 import javax.inject.Inject;
 import java.io.IOException;
 
+@SuppressWarnings("HttpUrlsUsage")
 public class Fetcher {
     private final OkHttpClient client;
 
@@ -45,5 +46,9 @@ public class Fetcher {
 
     public @NotNull String fetchTimetableCvs(@NotNull String id, int week) throws TimetableFetchingException {
         return makeRequest("http://plan.ii.us.edu.pl/plan.php?cvsfile=true&id=%s&w=%d".formatted(id, week));
+    }
+
+    public @NotNull String fetchTimetableHtml(@NotNull String id) throws TimetableFetchingException {
+        return makeRequest("http://plan.ii.us.edu.pl/plan.php?type=0&winW=1904&winH=510&id=" + id);
     }
 }

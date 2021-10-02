@@ -1,6 +1,7 @@
 plugins {
     java
     application
+    kotlin("jvm") version "1.5.10"
     id("org.openjfx.javafxplugin") version "0.0.9"
 }
 
@@ -18,34 +19,35 @@ javafx {
 
 repositories {
     mavenCentral()
+    google()
 }
 
 dependencies {
-    implementation("org.jetbrains:annotations:20.1.0")
+    implementation("org.jetbrains:annotations:22.0.0")
 
-    implementation("com.google.guava:guava:30.1-jre")
+    implementation("com.google.guava:guava:31.0.1-jre")
 
-    val daggerVersion = "2.30.1"
+    val daggerVersion = "2.38.1"
     implementation("com.google.dagger:dagger:$daggerVersion")
     annotationProcessor("com.google.dagger:dagger-compiler:$daggerVersion")
 
-    val jUnitVersion = "5.7.0"
+    val jUnitVersion = "5.8.1"
     testImplementation("org.junit.jupiter:junit-jupiter-api:$jUnitVersion")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:$jUnitVersion")
 
-    testImplementation("org.assertj:assertj-core:3.11.1")
+    testImplementation("org.assertj:assertj-core:3.21.0")
 
-    testImplementation("org.mockito:mockito-core:3.6.28")
+    testImplementation("org.mockito:mockito-core:3.12.4")
 
-    val autoFactoryVersion = "1.0-beta8"
+    val autoFactoryVersion = "1.0.1"
     compileOnly("com.google.auto.factory:auto-factory:$autoFactoryVersion")
     annotationProcessor("com.google.auto.factory:auto-factory:$autoFactoryVersion")
 
-    implementation("com.squareup.okhttp3:okhttp:4.9.0")
+    implementation("com.squareup.okhttp3:okhttp:4.9.1")
 
-    implementation("org.jsoup:jsoup:1.13.1")
+    implementation("org.jsoup:jsoup:1.14.2")
 
-    implementation ("net.sf.biweekly:biweekly:0.6.5")
+    implementation ("net.sf.biweekly:biweekly:0.6.6")
 }
 
 tasks.test {
